@@ -1,0 +1,23 @@
+{
+    "title": "BS jQuery PHP Boilerplate",
+    "name": "bs-jquery-php-boilerplate",
+    "version": "1.0.0",
+    "description": "Boilerplate code for creating starter Bootstrap 4, jQuery 3 and PHP 7 Website",
+    "homepage": "https://glenhughes.me",
+    "author": "Glen Hughes",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/GlenHughes/bs-jquery-php-boilerplate.git"
+    },
+    "dependencies": {
+        "bootstrap": "4.1.1",
+        "jquery": "3.3.1"
+    },
+    "devDependencies": {
+        "gulp-uglifycss": "^1.1.0",
+        "browser-sync": "2.24.5",
+        "gulp": "^3.9.1",
+        "gulp-concat": "^2.6.1",
+        "gulp-uglify": "^3.0.1"
+    }
+}
