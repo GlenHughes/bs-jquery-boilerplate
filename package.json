@@ -10,8 +10,8 @@
         "url": "https://github.com/GlenHughes/bs-jquery-php-boilerplate.git"
     },
     "dependencies": {
-        "bootstrap": "4.1.1",
-        "jquery": "3.3.1"
+        "bootstrap": "^4.1.2",
+        "jquery": "^3.3.1"
     },
     "devDependencies": {
         "gulp-uglifycss": "^1.1.0",
