@@ -38,15 +38,13 @@ gulp.task('default', ['js', 'css']);
 // Configure the browserSync task
 gulp.task('browserSync', function() {
   browserSync.init({
-    server: {
-      baseDir: "./"
-    }
+    proxy: 'http://yoursite.local'
   });
 });
 
 // Dev task
 gulp.task('dev', ['browserSync'], function() {
   gulp.watch('./public/content/**/*.php', browserSync.reload);
-  gulp.watch('./public/assets/css/*.css', browserSync.reload);
-  gulp.watch('./public/assets/js/*.js', browserSync.reload);
+  gulp.watch('./assets/css/*.css', ['css', browserSync.reload]);
+  gulp.watch('./assets/js/*.js', ['js', browserSync.reload]);
 });
