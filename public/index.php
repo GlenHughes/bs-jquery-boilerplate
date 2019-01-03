@@ -45,18 +45,17 @@
       </div>
     </nav>
 
-    <?php
-
-        // rusty nerds shop
-        // page loader
-        $action = isset($_GET['a']) ? $_GET['a'] : 'default';
-        $page = 'content/' . $action . '.php';
-        if (!file_exists($page)) {
-            $page = 'content/404.php';
-        }
-        require($page);
-
-    ?>
+    <main role="main" class="container py-3">
+        <?php
+            // page loader
+            $action = isset($_GET['a']) ? $_GET['a'] : 'default';
+            $page = 'content/' . $action . '.php';
+            if (!file_exists($page)) {
+                $page = 'content/404.php';
+            }
+            require($page);
+        ?>
+    </main>
 
     <!-- Footer -->
     <footer class="py-5 bg-dark">
